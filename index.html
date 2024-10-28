@@ -1,0 +1,184 @@
+<!-- TODO 1: Create the HTML Boilerplate -->
+
+<!-- TODO 2: Add Your previous projects' HTML into the public folder -->
+
+<!-- TODO 3: Take screenshots of your project previews and add the images to the images folder -->
+
+<!-- TODO 4: Add titles/subtitles etc. -->
+
+<!-- TODO 5: Add a link to the project pages -->
+
+<!-- TODO 6: Add images to show the project previews
+HINT for TODO 6: You can use the height attribute set to 200 to make the image smaller:
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-height -->
+
+<!-- TODO 7: Add the Contact Me and About Me page links -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    
+    <title>Byaheng Pagong</title>
+    <style>
+        h1 {
+            text-align: center;
+            font-family: calc();
+            font-size: 90px;
+            }
+        h2 {
+            text-align: center;
+            Font-family: calc();
+            font-size: 35px;
+            }
+
+       .FONT-LINK {
+            text-align: center;
+            text-decoration: none;
+            font-size: 50px;
+            font-weight: bolder;
+            color: blue;
+            }
+        a {
+            text-decoration: none;
+        }
+
+        p {text-align: center;}
+        
+        div {text-align: center;}
+        
+        
+        .image{
+            border: 5px solid rgb(15, 15, 14); 
+            height: 800px;
+            width: 800px;
+            left: 0px
+        }
+
+       .relative {
+        position: relative;
+        left: 0px;
+        border: 3px solid #73AD21;
+        }
+
+        div {
+            color: white;
+            background-color: 009900;
+            margin: 2px;
+            font-size: 25px;
+            }
+
+        .button{
+            color: rgb(252, 252, 250);
+            background-color: rgb(15, 5, 157);
+            display: inline;
+            margin-left: auto;
+            margin-right: auto;
+            width: 300px;
+            height: 100px;
+            font-size: 30px;
+            border-radius: 50px;
+            opacity: 0.6;
+            transition: 0.10s;
+            animation-name: myfirst;
+            animation-duration: 4s;
+            animation-iteration-count: 3;
+        }
+
+        .button:hover{
+            opacity: 1;
+            color: rgb(14, 14, 13);
+            background-color: rgb(199, 151, 8);
+            font-weight: bolder;
+            
+        }
+
+    
+
+        
+
+
+
+@keyframes myfirst {
+  0%   {background-color:rgb(13, 8, 8); left:0px; top:0px;
+        color: white;}
+  
+  25%  {background-color:yellow; left:200px; top:0px;
+color: black;}
+  50%  {background-color:rgb(42, 11, 152); left:200px; top:200px; color: white;}
+  75%  {background-color:rgb(227, 246, 25); left:0px; top:200px; color: black;}
+  100% {background-color:rgb(249, 245, 245); left:0px; top:0px;color: black;}
+}
+
+        .fit-picture {
+            width: 500px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+            border: 10px solid rgb(201, 150, 9);
+            box-shadow: 100px rgb(8, 8, 8);
+            background-color: red;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+
+.zoom-in-out-box {
+  
+  background: #f500cc;
+  animation: zoom-in-zoom-out 1s ease infinite;
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.5, 1.5);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+  </style>
+
+</head>
+<body style="background-color: rgb(248, 248, 247);">
+    <h1 style="color: blue;">BYAHENG PAGONG WORLD</h1>
+    <img class= "zoom-in-out-box fit-picture" src = "./assets/images/byahengPagong (2).jpg" 
+    alt="byaheng pagong" /> <br /> <br />
+    
+   
+<div>
+    <a href=".\public\contact.html"> 
+        <button class="button">CONTACT ME</button>
+    </a>
+    <a href=".\public\about.html">
+        <button class="button">ABOUT ME</button>
+    </a>
+</div>
+    
+    <h2>Di ka naman mapapagod kung di ka nagmamadali lagi!</h2>
+<hr /> <br >
+
+<div style="width: 50%; height: 100px; float: left; "> 
+    <a class="FONT-LINK" href=".\public\movie-ranking.html">MY TOP 5 MOVIE RANKING!</a> <br /> <br /> &nbsp;
+    <img draggable="true"class="image" src=".\assets\images\top3MovieRanking.jpg" alt="movieRanking" />
+</div>
+
+<br />
+
+    <div style="width: 40%; height: 100px; float: right; "> 
+        <a class="FONT-LINK"  href=".\public/birthday-invite.html">BIRTHDAY INVITE PROJECT</a> <br /> <br /> &nbsp;
+        <img draggable="true" class="image" src=".\assets\images\birthdate.jpg" alt="movieRanking" />
+
+    </div>
+
+</body>
+</html>
